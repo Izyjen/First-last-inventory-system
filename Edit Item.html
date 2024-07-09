@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Item</title>
+    
+    <link rel="stylesheet" href="bulma/bulma.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+        <ul>
+            <li><a href="dashboard.html">Home</a></li>
+            <li><a href="add item.html">ADD ITEM</a></li>
+            <li><a href="Edit Item.html">EDIT ITEM</a></li>
+            <li><a href="Delete Item.html">DELETE ITEM</a></li>
+        </ul>
+    </div>
+    
+    <div class="edit-item-form">
+        <h2>Edit Item</h2>
+        <form action="/edit-item" method="post">
+            <input type="hidden" name="item_id" value="123"> <!-- Replace with actual item ID -->
+            <input type="text" name="item_name" placeholder="Item Name" value="Sample Item" required>
+            <br>
+            <textarea name="item_description" placeholder="Item Description" rows="4" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
+            <br>
+            <input type="submit" value="Save Changes">
+        </form>
+    </div>
+</body>
+</html>

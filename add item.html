@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Item</title>
+    
+    <link rel="stylesheet" href="bulma/bulma.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+        <ul>
+            <li><a href="dashboard.html">Home</a></li>
+            <li><a href="add item.html">ADD ITEM</a></li>
+            <li><a href="Edit Item.html">EDIT ITEM</a></li>
+            <li><a href="Delete Item.html">DELETE ITEM</a></li>
+        </ul>
+    </div>
+    
+    <div class="add-item-form">
+        <h2>Add New Item</h2>
+        <form action="/add-item" method="post">
+            <input type="text" name="item_name" placeholder="Item Name" required>
+            <br>
+            <textarea name="item_description" placeholder="Item Description" rows="4" required></textarea>
+            <br>
+            <input type="submit" value="Add Item">
+        </form>
+    </div>
+</body>
+</html>
